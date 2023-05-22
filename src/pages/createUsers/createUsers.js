@@ -38,8 +38,6 @@ export const CreateUsers = ({data, setData}) => {
         setData(data)
     }, [])
 
-    console.log(data)
-    
     return(
         <div className='users_container'>
             <h1 style={{textAlign: 'center'}}>Admin Panel</h1>
