@@ -10,7 +10,6 @@ import axios from 'axios';
 import { useEffect } from 'react';
 import { useState } from 'react'
 
-
 function App() {
   const [data, setData] = useState([]);
 
@@ -25,7 +24,7 @@ function App() {
        
   return (
     <div>
-    <Routes>
+     <Routes>
       <Route path='/' element={<Landing/>}/>
       <Route path='/login' element={<Login/>}/>
       <Route path='/usersList' element={<UsersList data={data}/>}/>

@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 export const CreateUsers = ({data, setData}) => {
     const [name, setName] = useState();
@@ -33,9 +34,9 @@ export const CreateUsers = ({data, setData}) => {
         setData(arr)
     }
 
-    const handleReturnDeleted = () => {
+    const handleReturnDeleted = useCallback(() => {
         setData(data)
-    }
+    }, [])
 
     console.log(data)
     
@@ -72,4 +73,8 @@ export const CreateUsers = ({data, setData}) => {
              <button className={'del_all_btn'} onClick={handleReturnDeleted}>Back</button>
         </div>
     )
+}
+
+CreateUsers.propTypes = {
+     name: PropTypes.any
 }

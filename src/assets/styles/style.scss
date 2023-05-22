@@ -254,3 +254,94 @@
     }
   }
 }
+
+
+.not_found_container {
+  text-align: center;
+  margin-top: 200px;
+  button {
+      width: 100px;
+      height: 40px;
+      border-radius: 5px;
+      background-color: #2a9d8f;
+      border: transparent;
+      color: white;
+      cursor: pointer;
+      &:hover{
+        scale: 1.1;
+        background-color: #6d65ff;
+      }
+
+  }
+}
+
+/* General Styles */
+
+.bg {
+  height: 100vh;
+  padding: 50px;
+  overflow: hidden;
+  transition: 0.2s all linear;
+}
+
+.heading {
+  transition: 0.2s all linear;
+}
+
+.btn {
+  border: none;
+  padding: 10px 30px;
+  border-radius: 4px;
+  margin-top: 20px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s all linear;
+}
+
+.para {
+  width: 70vw;
+  transition: 0.2s all linear;
+}
+
+/* Light Mode Styles */
+
+.bg-light {
+  background-color: #fff;
+}
+
+.heading-light {
+  color: #222;
+}
+
+.para-light {
+  color: #222;
+}
+
+.btn-light {
+  background-color: #222;
+  color: #fff;
+  font-size: 15px;
+  margin-left: 42%;
+  cursor: pointer;
+}
+
+/* Dark Mode Styles */
+
+.bg-dark {
+  background-color: #222;
+}
+
+.heading-dark {
+  color: #fff;
+}
+
+.para-dark {
+  color: #fff;
+}
+
+.btn-dark {
+  background-color: #fff;
+  color: #222;
+  margin-left: 42%;
+  cursor:pointer
+}
